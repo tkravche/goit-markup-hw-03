@@ -5,54 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Studio (Version 2.1)</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+        href="https://cdnjs.cloud flare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <a class="logo" href="/index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
+        <div class="container flex-container">
+            <a class="logo link" href="/index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
             <nav>
                 <ul class="site-nav">
-                    <li class="item">
-                        <a href="./index.html" class="link current">Cтудія</a>
-                    </li>
-                    <li class="item">
-                        <a href="./portfolio.html" class="link">Портфоліо</a>
-                    </li>
-                    <li class="item"><a href="" class="link">Контакти</a></li>
+                    <div class="flex-container">
+                        <li class="item"><a href="./index.html" class="link current">Cтудія</a></li>
+                        <li class="item">
+                            <a href="./portfolio.html" class="link">Портфоліо</a>
+                        </li>
+                        <li class="item"><a href="" class="link">Контакти</a></li>
+                    </div>
                 </ul>
             </nav>
-            <ul class="contacts-header">
-                <li class="item address">
-                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-                </li>
-                <li class="item address">
-                    <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-                </li>
+            <ul class="contacts">
+                <div class="flex-container">
+                    <li class="item address">
+                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                    </li>
+                    <li class="item address">
+                        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                    </li>
+                </div>
             </ul>
         </div>
     </header>
+
     <main>
         <section class="section hero">
-            <h1 class="hero-title">
-                Ефективні рішення для <br>
-                вашого бізнесу
-            </h1>
-            <button type="button" class="btn btn-hero">Замовити послугу</button>
+            <div class="container">
+                <h1 class="hero-title">
+                    Ефективні рішення для <br>
+                    вашого бізнесу
+                </h1>
+                <button type="button" class="btn btn-hero">Замовити послугу</button>
+            </div>
         </section>
-        <section class="section">
-            <div class="container features">
+        <section class="section feature-list">
+            <div class="container">
                 <h2 class="section-title visually-hidden">Особливості</h2>
-                <ul class="feature-list">
+                <ul class="feature-list flex-container">
                     <li class="item">
                         <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p>
@@ -81,54 +86,58 @@
                         </p>
                     </li>
                 </ul>
-            </div>
+                <div>
         </section>
         <section class="section">
-            <div class="container tasks">
+            <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
-                <div class="photos">
-                    <img class="photo" src="./images/box_1.jpg" alt="Верстка сайтів" width="370">
-                    <img class="photo" src="./images/box_2.jpg" alt="Мобільні додатки" width="370">
-                    <img class="photo" src="./images/box_1.jpg" alt="Графічний дизайн" width="370">
+                <div class="flex-container">
+                    <img class="task-photo" src="./images/box_1.jpg" alt="Верстка сайтів" width="370">
+                    <img class="task-photo" src="./images/box_2.jpg" alt="Мобільні додатки" width="370">
+                    <img class="task-photo" src="./images/box_1.jpg" alt="Графічний дизайн" width="370">
                 </div>
             </div>
         </section>
         <section class="section team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
-                <ul class="team-cards">
-                    <li class="list card">
-                        <div class="team-card">
-                            <img src="./images/img1.jpg" alt="Ігор Дем'яненко" width="270">
-                            <h3 class="title">Ігор Дем'яненко</h3>
-                            <p>Product Designer</p>
-                        </div>
-                    </li>
-                    <li class="list card">
-                        <div class="team-card">
-                            <img src=" ./images/img2.jpg" alt="Ольга Рєпіна" width="270">
-                            <h3 class="title">Ольга Рєпіна</h3>
-                            <p>Frontend Developer</p>
-                        </div>
-                    </li>
-                    <li class="list card">
-                        <div class="team-card">
-                            <img src=" ./images/img3.jpg" alt="Микола Тарасов" width="270">
-                            <h3 class="title">Микола Тарасов</h3>
-                            <p>Marketing</p>
-                        </div>
-                    </li>
-                    <li class="list card">
-                        <div class="team-card">
-                            <img src=" ./images/img4.jpg" alt="Михайло Єрмаков" width="270">
-                            <h3 class="title">Михайло Єрмаков</h3>
-                            <p>UI Designer</p>
-                        </div>
-                    </li>
+                <ul class="team">
+                    <div class="flex-container">
+                        <li class="item team-item">
+                            <div class="team-card">
+                                <img src="./images/img1.jpg" alt="Ігор Дем'яненко" width="270">
+                                <h3 class="title">Ігор Дем'яненко</h3>
+                                <p>Product Designer</p>
+                            </div>
+                        </li>
+
+                        <li class="item team-item">
+                            <div class="team-card">
+                                <img src=" ./images/img2.jpg" alt="Ольга Рєпіна" width="270">
+                                <h3 class="title">Ольга Рєпіна</h3>
+                                <p>Frontend Developer</p>
+                            </div>
+                        </li>
+                        <li class="item team-item">
+                            <div class="team-card">
+                                <img src=" ./images/img3.jpg" alt="Микола Тарасов" width="270">
+                                <h3 class="title">Микола Тарасов</h3>
+                                <p>Marketing</p>
+                            </div>
+                        </li>
+                        <li class="item team-item">
+                            <div class="team-card">
+                                <img src=" ./images/img4.jpg" alt="Михайло Єрмаков" width="270">
+                                <h3 class="title">Михайло Єрмаков</h3>
+                                <p>UI Designer</p>
+                            </div>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <a class="logo link" href=" /index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
