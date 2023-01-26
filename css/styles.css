@@ -140,7 +140,6 @@ header {
 }
 /* Hero */
 .hero {
-  min-height: 600px;
   text-align: center;
 
   background-color: var(--hero-bg);
