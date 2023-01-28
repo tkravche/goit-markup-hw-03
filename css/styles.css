@@ -65,6 +65,9 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
+img {
+  display: block;
+}
 header {
   border-bottom: 1px solid #ececec;
 }
@@ -87,8 +90,10 @@ header {
 /* Navigation */
 .site-nav .link,
 .address .link {
+  display: block;
   padding-top: 20px;
   padding-bottom: 20px;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 1.15;
@@ -118,6 +123,7 @@ header {
 }
 .section-title {
   margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -174,7 +180,7 @@ header {
   align-items: flex-start;
 } */
 .feature-list .item {
-  width: 270px;
+  width: calc ((100% - 30px * 3)/4);
   min-height: 98px;
 }
 .feature-list .item:not(:last-child) {
@@ -291,7 +297,7 @@ section.team {
   / the number of the elements in the line */
 .project-list .item {
   border: 1px solid #eeeeee;
-  width: calc((100% - (30px * 2)) / 3);
+  width: calc((100% - 30px * 2) / 3);
 }
 .project-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
