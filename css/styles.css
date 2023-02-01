@@ -332,7 +332,7 @@ section.team {
   margin-bottom: 20px;
   color: var(--background-color);
 }
-footer .list:not(:last-child) {
+footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
 address {
