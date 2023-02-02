@@ -38,7 +38,7 @@ body {
 button {
   font: inherit;
   border: none;
-  padding: none;
+  padding: 0;
   cursor: pointer;
 }
 /* No bullets */
@@ -253,7 +253,6 @@ section.team {
 .btn-filter {
   min-height: 38px;
   border-radius: 4px;
-  border: none;
   padding: 6px 22px;
 
   font-family: inherit;
@@ -276,7 +275,8 @@ section.team {
 .project-list .title {
   padding-top: 20px;
   padding-left: 24px;
-  padding-bottom: 4px;
+  padding-right: 24px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -291,6 +291,7 @@ section.team {
   color: var(--primary-text-color);
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
 }
 /* calc = 100% (from parent)-sum of the margins in the line -1 
   / the number of the elements in the line */
