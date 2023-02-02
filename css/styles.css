@@ -175,11 +175,11 @@ header {
   padding: 10px 32px;
 }
 /* Features*/
-.section.feature-list {
+.section.features {
   padding-bottom: 0px;
 }
 .feature-list .item {
-  width: calc ((100% - 30px * 3)/4);
+  width: calc((100% - (30px * 3)) / 4);
   min-height: 98px;
 }
 .feature-list .item:not(:last-child) {
@@ -231,7 +231,7 @@ section.team {
   padding-bottom: 30px;
 
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.18;
 }
 .team .title {
   font-weight: 500;
