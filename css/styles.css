@@ -215,7 +215,7 @@ img {
 section.team {
   background: var(--filterbutton-color);
 }
-.team-card {
+.team-item {
   border-radius: 4px 0px;
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -225,20 +225,9 @@ section.team {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
-.team h3 {
+.team-card {
   padding-top: 30px;
-
-  font-weight: 500;
-  font-size: 16px;
-
-  color: var(--secondary-text-color);
-}
-.team p {
-  margin-top: 10px;
   padding-bottom: 30px;
-
-  font-size: 16px;
-  line-height: 1.18;
 }
 .team .title {
   font-weight: 500;
@@ -247,6 +236,11 @@ section.team {
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+}
+.job {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.18;
 }
 /*Portfolio */
 
