@@ -133,7 +133,13 @@ img {
   margin-left: auto;
 }
 .address .link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .address + .address {
   margin-left: 50px;
