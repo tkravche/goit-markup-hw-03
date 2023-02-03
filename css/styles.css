@@ -61,6 +61,8 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* the end of reset */
 .visually-hidden {
@@ -80,32 +82,39 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .flex-container {
   display: flex;
-  align-items: center;
 }
 /* Logo */
 .logo-accent {
   color: var(--accent-color);
 }
 .logo {
-  margin: 25px 0;
-  margin-right: 93px;
+  display: block;
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  text-decoration: none;
-
+}
+.logo-header {
+  padding: 24px 0;
+  margin-right: 93px;
   color: var(--logo-color);
 }
+
 /* Navigation */
-.site-nav .link,
-.address .link {
+.site-nav.flex-container,
+.contacts.flex-container {
+  align-items: center;
+}
+.site-nav .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-size: 14px;
   font-weight: 500;
@@ -129,9 +138,6 @@ img {
 .address + .address {
   margin-left: 50px;
 }
-header {
-  border-bottom: 1px solid var(--border-color);
-}
 /* Sections */
 .section {
   padding-top: 94px;
@@ -151,8 +157,8 @@ header {
 /* Hero */
 .hero {
   text-align: center;
-
-  background-color: var(--hero-bg);
+  background-color: var(--footer-color);
+  padding: 200px 0;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -181,7 +187,7 @@ header {
 }
 .feature-list .item {
   width: calc((100% - (30px * 3)) / 4);
-  min-height: 98px;
+  align-items: center;
 }
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
@@ -274,9 +280,6 @@ section.team {
   flex-wrap: wrap;
 }
 .project-list .title {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -290,9 +293,6 @@ section.team {
   font-size: 16px;
   line-height: 1.9;
   color: var(--primary-text-color);
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 /* calc = 100% (from parent)-sum of the margins in the line -1 
   / the number of the elements in the line */
@@ -303,6 +303,7 @@ section.team {
   margin-right: 30px;
 }
 .card-bottom {
+  padding: 20px 24px;
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
@@ -311,35 +312,33 @@ section.team {
   margin-bottom: 30px;
 }
 /* Footer */
-.footer .link {
+.footer {
+  background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-footer {
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+.footer-address .link {
+  display: block;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03;
+}
+.link.address {
   color: var(--address-color);
 }
 .link.street-address {
   color: var(--background-color);
 }
-.footer .logo {
-  color: var(--background-color);
-}
-.footer {
-  background-color: var(--footer-color);
-}
-.link.address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-}
-.footer .logo {
-  display: inline-block;
-  padding-top: 60px;
-  margin-bottom: 20px;
-  color: var(--background-color);
-}
-footer .item:not(:last-child) {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
-address {
-  padding-bottom: 60px;
-}
+
 /* Hover */
 .link:hover,
 .link:focus {
