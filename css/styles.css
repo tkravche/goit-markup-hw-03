@@ -182,9 +182,6 @@ img {
   padding: 10px 32px;
 }
 /* Features*/
-.section.features {
-  padding-bottom: 0px;
-}
 .feature-list .item {
   width: calc((100% - (30px * 3)) / 4);
   align-items: center;
@@ -208,6 +205,9 @@ img {
   padding: 0;
 }
 /* Tasks */
+.section.tasks {
+  padding-top: 0px;
+}
 .tasks.flex-container {
   gap: 30px;
 }
@@ -323,11 +323,11 @@ section.team {
 }
 .footer-address .link {
   display: block;
-
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
 .link.address {
   color: var(--address-color);
